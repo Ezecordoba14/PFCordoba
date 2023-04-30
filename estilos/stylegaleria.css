@@ -23,7 +23,7 @@ h2{
     text-align: center;
     color: #ffffff;
     font-family: 'Castoro Titling', cursive;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px;
 }
 h3{
@@ -42,11 +42,12 @@ p{
 }
 hr {
     justify-items: center;
-    height: 1px;
+    height: 2px !important;
     width: 90%;
     background-color: #F291C7;
     border-color: #F291C7;
     margin: 20px auto;
+    opacity: 1;
 }
 /* --------------BARRA DE NAVEGACION----------- */
 nav{
@@ -73,19 +74,6 @@ nav{
 }
 /* ---------------------------------------- */
 
-/* .navegacion {
-    display: inline;
-    text-align: center;
-}
-
-.navegacion a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-family: 'Balsamiq Sans', cursive;
-} */
-
-
 /* --------------------GALERIA--------------------- */
 .galeria {
     background-color: #023E73;
@@ -93,7 +81,7 @@ nav{
     max-width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 300px);
+    grid-template-rows: repeat(8, 300px);
     grid-gap: 10px;
     padding-bottom: 20px;
 }
@@ -135,9 +123,6 @@ nav{
 }
 .img8{
     background-image: url(../img/img-galeria/IMG_1480.jpg);
-}
-.img9{
-    background-image: url(../img/img-galeria/IMG_1564.jpg);
 }
 /* --------------------GALERIA--------------------- */
 
@@ -188,3 +173,46 @@ nav{
     justify-content: space-around;
 }
 /* --------------------------------------------- */
+
+/* -------MEDIA-------------- */
+@media only screen and (min-width:480px){
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        padding: 20px;
+        grid-template-areas: 
+            "img1 img2 img3 img3"
+            "img1 img4 img5 img6"
+            "img7 img4 img8 img8";
+            grid-gap: 10px;
+    }
+
+
+
+    .img1{
+        grid-area: img1 ;
+    }
+    .img2{
+        grid-area: img2 ;
+    }
+    
+    .img3{
+        grid-area: img3 ;
+    }
+    .img4{
+        grid-area: img4 ;
+    }
+    .img5{
+        grid-area: img5 ;
+    }
+    .img6{
+        grid-area: img6 ;
+    }
+    .img7{
+        grid-area: img7 ;
+    }
+    .img8{
+        grid-area: img8 ;
+    }
+}
