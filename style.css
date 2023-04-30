@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #023E73;
+}
+
+
+
+/* --------------BARRA DE NAVEGACION----------- */
+/* header{
+    position: sticky;
+    top: 0px;
+} */
+nav{
+    background-color: #010A26;
+    border-radius: 5px;
+}
+.navbar-brand:hover{
+    text-shadow: 0 0 5px #ffffff;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-collapse{
+    text-align: end;
+    flex-basis: 0;
+    flex-grow: 0;
+}
+.navbar-brand{
+    text-transform: uppercase;
+}
+/* ---------------------------------------- */
+
+
+/* -----------IMAGEN LOGO---------- */
+.logo img{
+    width: 100%;
+}
+/* -------------------------------- */
+
+/* ---------------------PRESENTACION--------------- */
+.presentacion{
+    color: white;
+}
+.presentacion-h2{
+    text-align: center;
+    color: white;
+}
+.presentacion p{
+    text-align: center;
+}
+.presentacion-izquierda img{
+    width: 100%;
+    border-radius: 5px;
+}
+/* ------------------------------------------------ */
+
+/* --------------------GALERIA--------------------- */
+.galeria{
+    background-color: #f291c7;
+    color: white;
+    text-align: center;
+}
+.galeria h2{
+    padding: 5px;
+}
+#carouselExampleControls{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+/* ------------------------------------------------ */
+
+/* ------------------RESEÑAS------------------------ */
+.reseña-h3{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.reseñas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+}
+.card{
+    margin: 20px;
+    height: auto;
+    max-width: 200px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+.card-img-top{
+    border-radius: 5px;
+    width: 100px;
+    justify-items: center;
+}
+/* ---------------------------------------------- */
+
+/* ---------------PIE DE PAGINA------------------- */
+.pie-pagina{
+    text-align: center;
+    background-color: #010A26;
+    width: 100%;
+    color: white;
+    justify-content: center;
+}
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px 0px 0px;
+    justify-items: center
+}
+.pie-pagina .grupo-1 .box h4{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .box a, .box img, .wp img{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 45px;
+    margin-right: 5px;
+    text-align: center;
+}
+.conta img {
+    vertical-align:middle;
+}
+.mapa {
+    align-items: center;
+    width: auto;
+    height: 100PX;
+}
+.pie-pagina .grupo-2 {
+    display: flex;
+    justify-content: space-around;
+}
+/* --------------------------------------------- */
+
+
+/* -------MEDIA-------------- */
+
+@media only screen and (min-width:480px){
+    .presentacion{
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .presentacion p{
+        max-height: 100px;
+    }
+    .presentacion-izquierda{
+        width: 50%;
+    }
+    .presentacion-derecha{
+        width: 50%;
+    }
+}
