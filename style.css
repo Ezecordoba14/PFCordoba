@@ -103,11 +103,15 @@ nav{
 
 /* ---------------PIE DE PAGINA------------------- */
 .pie-pagina{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
     background-color: #010A26;
     width: 100%;
     color: white;
     justify-content: center;
+    align-content: center;
 }
 .pie-pagina .grupo-1 {
     width: 100%;
