@@ -74,6 +74,39 @@ nav{
 }
 /* ---------------------------------------- */
 
+/* ------------RESERVAS------------ */
+.pag3 img {
+    display: inline;
+    margin-left: 2%;
+}
+
+.reservas1 h2{
+    font-size: 70px;
+}
+.reservas1 label{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.iniciar{
+    color: white;
+    font-size: 20px;
+    background-color: #F291C7;
+    border-radius: 5%;
+    margin: 20px 10px;
+    padding: 20px 40px;
+    font-family: 'Balsamiq Sans', #F291C7;
+}
+
+.horario{
+    color: white;
+    font-size: 20px;
+    background-color: #F291C7;
+    border-radius: 2%;
+    margin: 20px 10px;
+    padding: 20px 40px;
+}
+/* ------------RESERVAS------------ */
+
 /* ---------------PIE DE PAGINA------------------- */
 .pie-pagina{
     display: flex;
