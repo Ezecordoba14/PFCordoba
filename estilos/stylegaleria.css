@@ -1,6 +1,5 @@
 /* ----------------FUENTES----------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap");
 /* font-family: 'Balsamiq Sans', cursive;
 font-family: 'Castoro Titling', cursive;
 font-family: 'Pacifico', cursive;
@@ -9,214 +8,206 @@ font-family: 'Sacramento', cursive;
 font-family: 'Six Caps', sans-serif;
 font-family: 'Staatliches', cursive;*/
 /* ----------------FUENTES----------------------- */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #023E73;
+body {
+  background-color: #023E73;
 }
 
-h2{
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Castoro Titling', cursive;
-    font-size: 40px;
-    margin: 20px;
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Castoro Titling", cursive;
+  font-size: 40px;
+  margin: 20px;
 }
-h3{
-    font-family: 'Castoro Titling', cursive;
-    font-size: 40px;
-    margin: 20px;
+
+h3 {
+  font-family: "Castoro Titling", cursive;
+  font-size: 40px;
+  margin: 20px;
 }
-h4{
-    font-family: 'Castoro Titling', cursive;
-    margin-top: 10px;
-    margin-bottom: 0px;
+
+h4 {
+  font-family: "Castoro Titling", cursive;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
-p{
-    font-family:'Raleway', sans-serif;
-    font-size: 20px;
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
+
 hr {
-    justify-items: center;
-    height: 2px !important;
-    width: 90%;
-    background-color: #F291C7;
-    border-color: #F291C7;
-    margin: 20px auto;
-    opacity: 1;
+  justify-items: center;
+  height: 2px !important;
+  width: 90%;
+  background-color: #F291C7;
+  border-color: #F291C7;
+  margin: 20px auto;
+  opacity: 1;
 }
-a{
-    font-family: 'Castoro Titling', cursive;
+
+a {
+  font-family: "Castoro Titling", cursive;
 }
 
 /* --------------BARRA DE NAVEGACION----------- */
-/* header{
-    position: sticky;
-    top: 0px;
-} */
-nav{
-    background-color: #010A26;
-    border-radius: 5px;
+header {
+  position: sticky;
+  top: 0px;
 }
-.navbar-brand:hover{
-    text-shadow: 0 0 5px #ffffff;
+
+nav {
+  background-color: #010A26;
+  border-radius: 5px;
 }
-.nav-link{
-    color: white !important;
+nav .navbar-brand {
+  font-family: "Staatliches", cursive;
+  font-size: 30px;
 }
-.navbar-dark .navbar-toggler {
-    border: none;
-    font-size: 30px;
+nav .navbar-brand:hover {
+  text-shadow: 0 0 5px #ffffff;
 }
-.navbar-brand{
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
+nav .navbar-toggler {
+  border: none;
+  font-size: 30px;
 }
-/* ---------------------------------------- */
+nav .nav-link {
+  color: white !important;
+}
 
 /* --------------------GALERIA--------------------- */
 .galeria {
-    background-color: #023E73;
-    height: auto;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 300px);
-    grid-gap: 10px;
-    padding-bottom: 20px;
+  background-color: #023E73;
+  height: auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(8, 300px);
+  grid-gap: 10px;
+  padding-bottom: 20px;
 }
-.img{
-    border-radius: 5px;
-    background-position:center;
-    background-size: cover;
-    padding: 30px;
-    transition: all 0.5s;
+.galeria .img {
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  transition: all 0.5s;
 }
-.img:hover{
-    transform: scale(0.90);
-    transition: all 0.5s;
-    box-shadow: 0 0 5px #010A26;
+.galeria .img:hover {
+  transform: scale(0.9);
+  transition: all 0.5s;
+  box-shadow: 0 0 5px #010A26;
+}
+.galeria .img1 {
+  background-image: url(../img/img-galeria/IMG_0952.jpg);
+}
+.galeria .img2 {
+  background-image: url(../img/img-galeria/IMG_0981.jpg);
+}
+.galeria .img3 {
+  background-image: url(../img/img-galeria/IMG_1334.jpg);
+}
+.galeria .img4 {
+  background-image: url(../img/img-galeria/IMG_1446.jpg);
+}
+.galeria .img5 {
+  background-image: url(../img/img-galeria/IMG_1442.jpg);
+}
+.galeria .img6 {
+  background-image: url(../img/img-galeria/IMG_1498.jpg);
+}
+.galeria .img7 {
+  background-image: url(../img/img-galeria/IMG_1465.jpg);
+}
+.galeria .img8 {
+  background-image: url(../img/img-galeria/IMG_1480.jpg);
 }
 
-
-.img1{
-    background-image: url(../img/img-galeria/IMG_0952.jpg);
-}
-.img2{
-    background-image: url(../img/img-galeria/IMG_0981.jpg);
-}
-
-.img3{
-    background-image: url(../img/img-galeria/IMG_1334.jpg);
-}
-.img4{
-    background-image: url(../img/img-galeria/IMG_1446.jpg);
-}
-.img5{
-    background-image: url(../img/img-galeria/IMG_1442.jpg);
-}
-.img6{
-    background-image: url(../img/img-galeria/IMG_1498.jpg);
-}
-.img7{
-    background-image: url(../img/img-galeria/IMG_1465.jpg);
-}
-.img8{
-    background-image: url(../img/img-galeria/IMG_1480.jpg);
-}
 /* --------------------GALERIA--------------------- */
-
 /* ---------------PIE DE PAGINA------------------- */
-.pie-pagina{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    background-color: #010A26;
-    width: 100%;
-    color: white;
-    justify-content: center;
-    align-content: center;
+.pie-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #010A26;
+  width: 100%;
+  color: white;
+  justify-content: center;
+  align-content: center;
 }
 .pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px 0px 0px;
-    justify-items: center
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0px 0px;
+  justify-items: center;
 }
-.pie-pagina .grupo-1 .box h4{
-    font-size: 25px;
+.pie-pagina .grupo-1 .box h4 {
+  font-size: 25px;
 }
-.pie-pagina .grupo-1 .box p{
-    margin-bottom: 30px;
+.pie-pagina .grupo-1 .box p {
+  margin-bottom: 30px;
 }
-.pie-pagina .grupo-1 .box a, .box img, .wp img{
-    display: inline-block;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 25px;
+.pie-pagina .grupo-1 .box a, .pie-pagina .grupo-1 .box img {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 25px;
 }
-.conta img {
-    vertical-align:middle;
-}
-.mapa {
-    align-items: center;
-    width: auto;
-    height: 100PX;
+.pie-pagina .grupo-1 .box .mapa {
+  align-items: center;
+  width: auto;
+  height: 100PX;
 }
 .pie-pagina .grupo-2 {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
+
 /* --------------------------------------------- */
-
 /* -------MEDIA-------------- */
-@media only screen and (min-width:480px){
-    .galeria{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 200px);
-        padding: 20px;
-        grid-template-areas: 
-            "img1 img2 img3 img3"
-            "img1 img4 img5 img6"
-            "img7 img4 img8 img8";
-            grid-gap: 10px;
-    }
-
-
-
-    .img1{
-        grid-area: img1 ;
-    }
-    .img2{
-        grid-area: img2 ;
-    }
-    
-    .img3{
-        grid-area: img3 ;
-    }
-    .img4{
-        grid-area: img4 ;
-    }
-    .img5{
-        grid-area: img5 ;
-    }
-    .img6{
-        grid-area: img6 ;
-    }
-    .img7{
-        grid-area: img7 ;
-    }
-    .img8{
-        grid-area: img8 ;
-    }
-}
+@media only screen and (min-width: 480px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    padding: 20px;
+    grid-template-areas: "img1 img2 img3 img3" "img1 img4 img5 img6" "img7 img4 img8 img8";
+    grid-gap: 10px;
+  }
+  .galeria .img1 {
+    grid-area: img1;
+  }
+  .galeria .img2 {
+    grid-area: img2;
+  }
+  .galeria .img3 {
+    grid-area: img3;
+  }
+  .galeria .img4 {
+    grid-area: img4;
+  }
+  .galeria .img5 {
+    grid-area: img5;
+  }
+  .galeria .img6 {
+    grid-area: img6;
+  }
+  .galeria .img7 {
+    grid-area: img7;
+  }
+  .galeria .img8 {
+    grid-area: img8;
+  }
+}/*# sourceMappingURL=stylegaleria.css.map */

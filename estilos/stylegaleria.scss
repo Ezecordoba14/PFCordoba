@@ -20,8 +20,10 @@ body{
 }
 
 h2{
+    text-align: center;
+    color: #ffffff;
     font-family: 'Castoro Titling', cursive;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20px;
 }
 h3{
@@ -37,6 +39,15 @@ h4{
 p{
     font-family:'Raleway', sans-serif;
     font-size: 20px;
+}
+hr {
+    justify-items: center;
+    height: 2px !important;
+    width: 90%;
+    background-color: #F291C7;
+    border-color: #F291C7;
+    margin: 20px auto;
+    opacity: 1;
 }
 a{
     font-family: 'Castoro Titling', cursive;
@@ -72,93 +83,58 @@ nav{
 }
 
 
-
-/* ---------------------------------------- */
-
-/* -----------IMAGEN LOGO---------- */
-.logo img{
-    width: 100%;
-}
-/* -------------------------------- */
-
-/* ---------------------PRESENTACION--------------- */
-.presentacion-h2{
-    text-align: center;
-    color: white;
-}
-
-.presentacion{
-    color: white;
-
-    p{
-        text-align: center;
-    }
-
-    .presentacion-izquierda img{
-        width: 100%;
-        border-radius: 5px;
-    }
-}
-
-
-
-/* ------------------------------------------------ */
-
 /* --------------------GALERIA--------------------- */
-.galeria{
-    background-color: #f291c7;
-    color: white;
-    text-align: center;
+.galeria {
+    background-color: #023E73;
+    height: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 300px);
+    grid-gap: 10px;
+    padding-bottom: 20px;
 
-    h2{
-        color: #010A26;
-        font-weight: bold;
-        padding-top: 20px;
+    .img{
+        border-radius: 5px;
+        background-position:center;
+        background-size: cover;
+        padding: 30px;
+        transition: all 0.5s;
     }
 
-    #carouselExampleControls{
-        height: 80%;
-        width: 50%;
-        margin: auto;
+    .img:hover{
+        transform: scale(0.90);
+        transition: all 0.5s;
+        box-shadow: 0 0 5px #010A26;
+    }
+    
+    .img1{
+        background-image: url(../img/img-galeria/IMG_0952.jpg);
+    }
+    .img2{
+        background-image: url(../img/img-galeria/IMG_0981.jpg);
+    }
+    
+    .img3{
+        background-image: url(../img/img-galeria/IMG_1334.jpg);
+    }
+    .img4{
+        background-image: url(../img/img-galeria/IMG_1446.jpg);
+    }
+    .img5{
+        background-image: url(../img/img-galeria/IMG_1442.jpg);
+    }
+    .img6{
+        background-image: url(../img/img-galeria/IMG_1498.jpg);
+    }
+    .img7{
+        background-image: url(../img/img-galeria/IMG_1465.jpg);
+    }
+    .img8{
+        background-image: url(../img/img-galeria/IMG_1480.jpg);
     }
 }
-
-
-/* ------------------------------------------------ */
-
-/* ------------------RESEÑAS------------------------ */
-.reseña-h3{
-    text-align: center;
-    color: white;
-    padding-top: 20px;
-}
-.reseñas{
-    display: flex;
-    width: 100%;
-    justify-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-
-    .card{
-        height: auto;
-        max-width: 200px;
-        padding: 10px;
-        align-items: center;
-        text-align: center;
-        margin: 10px 0;
-
-        .card-img-top{
-            border-radius: 5px;
-            width: 100px;
-            justify-items: center;
-        }
-    }
-}
-
-
-/* ---------------------------------------------- */
-
+/* --------------------GALERIA--------------------- */
 /* ---------------PIE DE PAGINA------------------- */
 .pie-pagina{
     display: flex;
@@ -209,38 +185,43 @@ nav{
 
 /* --------------------------------------------- */
 
-
 /* -------MEDIA-------------- */
-
 @media only screen and (min-width:480px){
-    .presentacion{
-        display: flex;
-        padding-bottom: 20px;
-
-        p{
-            max-height: 100px;
-        }
-    }
-    .presentacion-izquierda{
-        width: 50%;
-    }
-    .presentacion-derecha{
-        width: 50%;
-        max-height: 320px;
-    }
-}
-
-@media only screen and (min-width:480px) and (max-width:1180px){
-    .presentacion-derecha{
-        overflow: scroll;
-    }
-}
-
-@media only screen and (min-width:700px){
-    .reseñas{
+    .galeria{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 100%;
-        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        padding: 20px;
+        grid-template-areas: 
+            "img1 img2 img3 img3"
+            "img1 img4 img5 img6"
+            "img7 img4 img8 img8";
+            grid-gap: 10px;
+
+            .img1{
+                grid-area: img1 ;
+            }
+            .img2{
+                grid-area: img2 ;
+            }
+            
+            .img3{
+                grid-area: img3 ;
+            }
+            .img4{
+                grid-area: img4 ;
+            }
+            .img5{
+                grid-area: img5 ;
+            }
+            .img6{
+                grid-area: img6 ;
+            }
+            .img7{
+                grid-area: img7 ;
+            }
+            .img8{
+                grid-area: img8 ;
+            }
     }
 }
