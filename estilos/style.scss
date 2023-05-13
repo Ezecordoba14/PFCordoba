@@ -1,0 +1,246 @@
+/* ----------------FUENTES----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap');
+
+/* font-family: 'Balsamiq Sans', cursive;
+font-family: 'Castoro Titling', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Staatliches', cursive;*/
+/* ----------------FUENTES----------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #023E73;
+}
+
+h2{
+    font-family: 'Castoro Titling', cursive;
+    font-size: 30px;
+    margin: 20px;
+}
+h3{
+    font-family: 'Castoro Titling', cursive;
+    font-size: 40px;
+    margin: 20px;
+}
+h4{
+    font-family: 'Castoro Titling', cursive;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+p{
+    font-family:'Raleway', sans-serif;
+    font-size: 20px;
+}
+a{
+    font-family: 'Castoro Titling', cursive;
+}
+
+/* --------------BARRA DE NAVEGACION----------- */
+header{
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    background-color: #010A26;
+    border-radius: 5px;
+    
+    .navbar-brand{
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+    }
+
+    .navbar-brand:hover{
+        text-shadow: 0 0 5px #ffffff;
+    }
+
+    .navbar-toggler {
+        border: none;
+        font-size: 30px;
+    }
+    .nav-link{
+        color: white !important;
+    }
+    
+}
+
+
+
+/* ---------------------------------------- */
+
+/* -----------IMAGEN LOGO---------- */
+.logo img{
+    width: 100%;
+}
+/* -------------------------------- */
+
+/* ---------------------PRESENTACION--------------- */
+.presentacion-h2{
+    text-align: center;
+    color: white;
+}
+
+.presentacion{
+    color: white;
+
+    p{
+        text-align: center;
+    }
+
+    .presentacion-izquierda img{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+
+
+/* ------------------------------------------------ */
+
+/* --------------------GALERIA--------------------- */
+.galeria{
+    background-color: #f291c7;
+    color: white;
+    text-align: center;
+
+    h2{
+        color: #010A26;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+
+    #carouselExampleControls{
+        height: 80%;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+/* ------------------------------------------------ */
+
+/* ------------------RESEÑAS------------------------ */
+.reseña-h3{
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+.reseñas{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+
+    .card{
+        height: auto;
+        max-width: 200px;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0;
+
+        .card-img-top{
+            border-radius: 5px;
+            width: 100px;
+            justify-items: center;
+        }
+    }
+}
+
+
+/* ---------------------------------------------- */
+
+/* ---------------PIE DE PAGINA------------------- */
+.pie-pagina{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: #010A26;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-content: center;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px 0px 0px;
+        justify-items: center;
+
+        .box{
+            h4{
+                font-size: 25px;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            a, img, {
+                display: inline-block;
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+                margin-bottom: 15px;
+                text-align: center;
+                font-size: 25px;
+            }
+            .mapa {
+                align-items: center;
+                width: auto;
+                height: 100PX;
+            }
+        }
+    }
+    .grupo-2 {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* --------------------------------------------- */
+
+
+/* -------MEDIA-------------- */
+
+@media only screen and (min-width:480px){
+    .presentacion{
+        display: flex;
+        padding-bottom: 20px;
+
+        p{
+            max-height: 100px;
+        }
+    }
+    .presentacion-izquierda{
+        width: 50%;
+    }
+    .presentacion-derecha{
+        width: 50%;
+        max-height: 320px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:1180px){
+    .presentacion-derecha{
+        overflow: scroll;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .reseñas{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        justify-items: center;
+    }
+}
