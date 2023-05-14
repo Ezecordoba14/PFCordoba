@@ -1,0 +1,299 @@
+/* ----------------Colores---------------------- */
+$color1: #010A26;
+$color2: #023E73;
+$color3: #F291C7;
+$color4: black;
+$color5: white;
+
+/* ----------------Colores----------------------- */
+
+/* ----------------FUENTES----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap');
+
+/* font-family: 'Balsamiq Sans', cursive;
+font-family: 'Castoro Titling', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Staatliches', cursive;*/
+/* ----------------FUENTES----------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color2;
+}
+
+h2 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 30px;
+    margin: 20px;
+}
+
+h3 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 40px;
+    margin: 20px;
+}
+
+h4 {
+    font-family: 'Castoro Titling', cursive;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+// a {
+//     font-family: 'Castoro Titling', cursive;
+// }
+
+hr {
+    justify-items: center;
+    height: 2px !important;
+    width: 90%;
+    background-color: $color3;
+    border-color: $color3;
+    margin: 20px auto;
+    opacity: 1;
+}
+
+/* --------------BARRA DE NAVEGACION----------- */
+header {
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    background-color: $color1;
+    border-radius: 5px;
+
+    .navbar-brand {
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+    }
+
+    .navbar-brand:hover {
+        text-shadow: 0 0 5px $color5;
+    }
+
+    .navbar-toggler {
+        border: none;
+        font-size: 30px;
+    }
+
+    .nav-link {
+        color: $color5 !important;
+    }
+
+}
+
+
+
+/* ---------------------------------------- */
+/* ------------RESERVAS------------ */
+h2 {
+    color: $color5;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 2px 3px $color1;
+}
+.reservas1 {
+
+    .iniciar {
+        text-align: center;
+        width: 95%;
+        color: $color5;
+        font-size: 20px;
+        background-color: $color5;
+        box-shadow: 8px 8px $color1;
+        margin: 20px auto;
+        padding: 20px 0px;
+
+        .h3-titulo{
+            font-family: 'Raleway', sans-serif;
+            text-transform:uppercase;
+            font-weight: 900;
+            color: $color2;
+            font-size: 30px;
+            margin-bottom: 27px;
+        }
+
+        .form-grupo {
+            position: relative;
+            padding-top: 27px;
+            height: 70px;
+
+            .form-input {
+                display: flex;
+                margin: auto;
+                border: none;
+                border: 4px solid $color1;
+                box-shadow: 3px 2px rgba(0, 0, 0, 0.568);
+                border-radius: 5px;
+                background: none;
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                outline: none;
+            }
+
+            .form-label {
+                color: $color1;
+                text-shadow: 1px 1px rgba(0, 0, 0, 0.568);
+                cursor: pointer;
+                position: relative;
+                top: -35px;
+                left: 5px;
+                font-family: 'Staatliches', cursive;
+                transition: all 0.2s;
+            }
+            .form-input:focus+.form-label, .form-input:valid+.form-label{
+                transform: translateY(-30px) scale(.9);
+                transition: all 0.2s;
+            }
+        
+        }
+
+        a{
+            font-size: 12px;
+            color: $color1;
+            font-family:'Pacifico', cursive;
+        }
+
+        .btn{
+            color: $color1;
+            padding: 15px;
+            margin: 30px 0px;
+            width: 310px;
+            font-size: 15px;
+            background: $color3;
+            border-radius: 30px;
+            font-weight: 800;
+            box-shadow: 5px 5px 0px 0px $color1;
+        }
+
+        .btn:hover{
+            background-color: #c57da3;
+        }
+
+        .btn:active{
+            transform: translate(5px, 5px);
+        }
+
+
+        .lbl-register{
+            color: $color1;
+            font-size: 15px;
+        }
+    }
+
+
+    .horario {
+        @extend .iniciar;
+        .turno{
+            margin-bottom: 10px !important;
+        }
+        label{
+            color: $color1;
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+        }
+        .calendar{
+            width: 40%;
+            height: 200px;
+            text-align: center;
+            box-shadow: 2px 2px $color1;
+            border: 4px solid $color1;
+            border-radius: 5px;
+        }
+        .hour{
+            margin: 0 20px;
+            width: 20%;
+            height: 200px;
+            box-shadow: 2px 2px $color1;
+            border: 4px solid $color1;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* ------------RESERVAS------------ */
+
+/* ---------------PIE DE PAGINA------------------- */
+.pie-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: $color1;
+    width: 100%;
+    color: $color5;
+    justify-content: center;
+    align-content: center;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px 0px 0px;
+        justify-items: center;
+
+        .box {
+            h4 {
+                font-size: 25px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            a,
+            img {
+                display: inline-block;
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+                margin-bottom: 15px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .mapa {
+                align-items: center;
+                width: auto;
+                height: 100PX;
+            }
+        }
+    }
+
+    .grupo-2 {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* --------------------------------------------- */
+
+/* -------MEDIA-------------- */
+
+    @media only screen and (min-width:840px){
+        .reservas1{
+            display: flex;
+            padding-top: 20px;
+            justify-content: space-between;
+
+                .iniciar{
+                    width: 40%;
+                }
+        }
+    }
+

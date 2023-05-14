@@ -1,6 +1,5 @@
 /* ----------------FUENTES----------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap");
 /* font-family: 'Balsamiq Sans', cursive;
 font-family: 'Castoro Titling', cursive;
 font-family: 'Pacifico', cursive;
@@ -9,48 +8,53 @@ font-family: 'Sacramento', cursive;
 font-family: 'Six Caps', sans-serif;
 font-family: 'Staatliches', cursive;*/
 /* ----------------FUENTES----------------------- */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #023E73;
+body {
+  background-color: #023E73;
 }
 
-h2{
-    text-align: center;
-    color: #ffffff;
-    font-family: 'Castoro Titling', cursive;
-    font-size: 40px;
-    margin: 20px;
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Castoro Titling", cursive;
+  font-size: 40px;
+  margin: 20px;
 }
-h3{
-    font-family: 'Castoro Titling', cursive;
-    font-size: 40px;
-    margin: 20px;
+
+h3 {
+  font-family: "Castoro Titling", cursive;
+  font-size: 40px;
+  margin: 20px;
 }
-h4{
-    font-family: 'Castoro Titling', cursive;
-    margin-top: 10px;
-    margin-bottom: 0px;
+
+h4 {
+  font-family: "Castoro Titling", cursive;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
-p{
-    font-family:'Raleway', sans-serif;
-    font-size: 20px;
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
+
 hr {
-    justify-items: center;
-    height: 2px !important;
-    width: 90%;
-    background-color: #F291C7;
-    border-color: #F291C7;
-    margin: 20px auto;
-    opacity: 1;
+  justify-items: center;
+  height: 2px !important;
+  width: 90%;
+  background-color: #F291C7;
+  border-color: #F291C7;
+  margin: 20px auto;
+  opacity: 1;
 }
-a{
-    font-family: 'Castoro Titling', cursive;
+
+a {
+  font-family: "Castoro Titling", cursive;
 }
 
 /* --------------BARRA DE NAVEGACION----------- */
@@ -58,107 +62,117 @@ a{
     position: sticky;
     top: 0px;
 } */
-nav{
-    background-color: #010A26;
-    border-radius: 5px;
+nav {
+  background-color: #010A26;
+  border-radius: 5px;
 }
-.navbar-brand:hover{
-    text-shadow: 0 0 5px #ffffff;
+
+.navbar-brand:hover {
+  text-shadow: 0 0 5px #ffffff;
 }
-.nav-link{
-    color: white !important;
+
+.nav-link {
+  color: white !important;
 }
+
 .navbar-dark .navbar-toggler {
-    border: none;
-    font-size: 30px;
+  border: none;
+  font-size: 30px;
 }
-.navbar-brand{
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
+
+.navbar-brand {
+  font-family: "Staatliches", cursive;
+  font-size: 30px;
 }
+
 /* ---------------------------------------- */
+/* --------------SERVICIOS------------ */
+.pag2 {
+  padding-left: 25px;
+}
 
+.pag2 h2 {
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.servicio span {
+  font-style: oblique;
+  color: white;
+  font-size: 20px;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.servicio p {
+  color: white;
+  padding-bottom: 25px;
+}
+
+.producto span {
+  font-style: oblique;
+  color: white;
+  font-size: 20px;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.producto p {
+  color: white;
+  padding-bottom: 25px;
+}
 
 /* --------------SERVICIOS------------ */
-.pag2{
-    padding-left: 25px;
-}
-
-.pag2 h2{
-    font-size: 70px;
-    color: #ffffff;
-}
-
-.servicio span{
-    font-style:oblique;
-    color: white;
-    font-size: 20px;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.servicio p{
-    color: white;
-    padding-bottom: 25px;
-}
-
-.producto span{
-    font-style:oblique;
-    color: white;
-    font-size: 20px;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.producto p{
-    color: white;
-    padding-bottom: 25px;
-}
-/* --------------SERVICIOS------------ */
-
-
 /* ---------------PIE DE PAGINA------------------- */
-.pie-pagina{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    background-color: #010A26;
-    width: 100%;
-    color: white;
-    justify-content: center;
-    align-content: center;
+.pie-pagina {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: #010A26;
+  width: 100%;
+  color: white;
+  justify-content: center;
+  align-content: center;
 }
+
 .pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px 0px 0px;
-    justify-items: center
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0px 0px;
+  justify-items: center;
 }
-.pie-pagina .grupo-1 .box h4{
-    font-size: 25px;
+
+.pie-pagina .grupo-1 .box h4 {
+  font-size: 25px;
 }
-.pie-pagina .grupo-1 .box p{
-    margin-bottom: 30px;
+
+.pie-pagina .grupo-1 .box p {
+  margin-bottom: 30px;
 }
-.pie-pagina .grupo-1 .box a, .box img, .wp img{
-    display: inline-block;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 25px;
+
+.pie-pagina .grupo-1 .box a, .box img, .wp img {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 25px;
 }
+
 .conta img {
-    vertical-align:middle;
+  vertical-align: middle;
 }
+
 .mapa {
-    align-items: center;
-    width: auto;
-    height: 100PX;
+  align-items: center;
+  width: auto;
+  height: 100PX;
 }
+
 .pie-pagina .grupo-2 {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-/* --------------------------------------------- */
+
+/* --------------------------------------------- *//*# sourceMappingURL=styleservicio.css.map */

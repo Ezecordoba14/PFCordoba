@@ -45,35 +45,49 @@
         </nav>
     </header>
     <main>
+        <h2>Reservas</h2>
+        <hr>
         <section class="reservas1">
-            <h2>Iniciar Sesion</h2>
-            <hr>
-            <section class="iniciar">
-                <label for="Email">Email
-                    <input type="email" name="Email" id="" required>
-                </label><br>
-                <label for="Contraseña">Contraseña
-                    <input type="password" name="Contraseña" placeholder="Contraseña" required>
-                </label><br>
+            <form class="iniciar">
+                <h3 class="h3-titulo">Iniciar Sesión</h3>
+
+                <div class="form-grupo">
+                    <input type="email" name="Email" required class="form-input">
+                <label for="email" class="form-label input-email">Email
+                </label>
+                <span class="linea"></span>
+                </div>
+
+
+                <div class="form-grupo">
+                    <input type="password" name="Email" id="" required class="form-input">
+                <label for="password" class="form-label password">Contraseña
+                </label>
+                <span class="linea"></span>
+                </div>
+                <!-- <input type="password" name="Contraseña" placeholder="Contraseña" required class="barra">
+                <label for="Contraseña">
+                    <span class="texto">Contraseña</span>
+                </label><br> -->
                 <a href="#">Olvide mi Contraseña</a><br>
-                <input type="checkbox" name="recuerdame" id=""> recuerdame
-                <input type="button" value="Acceder"><br>
-                <label for="Registrarse">Registrarse
+                <!-- <span> <input type="checkbox" name="recuerdame" id=""> recuerdame</span> -->
+                <input type="button" value="Acceder" class="btn"><br>
+                <label for="Registrarse" class="lbl-register">No tienes una cuenta?
                     <a href="#">Crear perfil</a>
                 </label>
-            </section>
-            <hr>
-            <hr>
+            </form>
+
             <section class="horario">
+                h3.h3-titulo.turno{Turnos}
                 <label for="">
                     Escoje el dia y un horario para reservar tu turno...
-                    <input type="date" name="turnos" required>
-                    <input type="time" name="hora" min="9:00" max="21:00">
                 </label>
-                <input type="button" value="enviar">
+                <input type="date" name="turnos" required class="calendar">
+                <input type="time" name="hora" min="9:00" max="21:00" class="hour"><br>
+                <input type="button" value="Enviar" class="btn">
             </section>
-            <hr>
         </section>
+        <hr>
     </main>
     <footer class="pie-pagina">
         <section class="grupo-1">
