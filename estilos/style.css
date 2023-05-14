@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* ----------------Colores---------------------- */
+/* ----------------Colores----------------------- */
 /* ----------------FUENTES----------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap");
 /* font-family: 'Balsamiq Sans', cursive;
@@ -23,6 +25,7 @@ h2 {
   font-family: "Castoro Titling", cursive;
   font-size: 30px;
   margin: 20px;
+  text-shadow: 2px 3px #010A26;
 }
 
 h3 {
@@ -51,23 +54,22 @@ header {
   position: sticky;
   top: 0px;
 }
-
-nav {
+header nav {
   background-color: #010A26;
   border-radius: 5px;
 }
-nav .navbar-brand {
+header nav .navbar-brand {
   font-family: "Staatliches", cursive;
   font-size: 30px;
 }
-nav .navbar-brand:hover {
+header nav .navbar-brand:hover {
   text-shadow: 0 0 5px #ffffff;
 }
-nav .navbar-toggler {
+header nav .navbar-toggler {
   border: none;
   font-size: 30px;
 }
-nav .nav-link {
+header nav .nav-link {
   color: white !important;
 }
 
@@ -86,13 +88,28 @@ nav .nav-link {
 
 .presentacion {
   color: white;
+  margin: 0 20px;
 }
-.presentacion p {
+.presentacion .presentacion-derecha {
+  margin: 10px;
+  background-color: white;
+  box-shadow: 8px 8px #010A26;
+}
+.presentacion .presentacion-derecha p {
+  color: #010A26;
   text-align: center;
+  font-weight: bold;
 }
-.presentacion .presentacion-izquierda img {
-  width: 100%;
+.presentacion .presentacion-izquierda {
+  height: 370px;
+  background-image: url(../img/WhatsApp\ Image\ 2023-03-23\ at\ 13.00.05.jpeg);
+  background-position: center;
+  background-position-y: 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
   border-radius: 5px;
+  box-shadow: 8px 8px #010A26;
 }
 
 /* ------------------------------------------------ */
@@ -101,11 +118,20 @@ nav .nav-link {
   background-color: #f291c7;
   color: white;
   text-align: center;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: 8px 8px #010A26;
+}
+.galeria .carousel {
+  bottom: 20px;
+  box-shadow: 8px 8px #3b1c2d;
 }
 .galeria h2 {
   color: #010A26;
   font-weight: bold;
   padding-top: 20px;
+  text-shadow: 1px 2px white;
 }
 .galeria #carouselExampleControls {
   height: 80%;
@@ -136,6 +162,7 @@ nav .nav-link {
   align-items: center;
   text-align: center;
   margin: 10px 0;
+  box-shadow: 8px 8px #010A26;
 }
 .reseñas .card .card-img-top {
   border-radius: 5px;
@@ -203,7 +230,7 @@ nav .nav-link {
   }
   .presentacion-derecha {
     width: 50%;
-    max-height: 320px;
+    max-height: 370px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 1180px) {
