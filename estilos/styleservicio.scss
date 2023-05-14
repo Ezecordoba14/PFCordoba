@@ -1,3 +1,12 @@
+/* ----------------Colores---------------------- */
+$color1: #010A26;
+$color2: #023E73;
+$color3: #F291C7;
+$color4: black;
+$color5: white;
+
+/* ----------------Colores----------------------- */
+
 /* ----------------FUENTES----------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap');
 
@@ -9,156 +18,205 @@ font-family: 'Sacramento', cursive;
 font-family: 'Six Caps', sans-serif;
 font-family: 'Staatliches', cursive;*/
 /* ----------------FUENTES----------------------- */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #023E73;
+body {
+    background-color: $color2;
 }
 
-h2{
-    text-align: center;
-    color: #ffffff;
+h2 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 30px;
+    margin: 20px;
+}
+
+h3 {
     font-family: 'Castoro Titling', cursive;
     font-size: 40px;
     margin: 20px;
 }
-h3{
-    font-family: 'Castoro Titling', cursive;
-    font-size: 40px;
-    margin: 20px;
-}
-h4{
+
+h4 {
     font-family: 'Castoro Titling', cursive;
     margin-top: 10px;
     margin-bottom: 0px;
 }
-p{
-    font-family:'Raleway', sans-serif;
+
+p {
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
+
+a {
+    font-family: 'Castoro Titling', cursive;
+}
+
 hr {
     justify-items: center;
     height: 2px !important;
     width: 90%;
-    background-color: #F291C7;
-    border-color: #F291C7;
+    background-color: $color3;
+    border-color: $color3;
     margin: 20px auto;
     opacity: 1;
 }
-a{
-    font-family: 'Castoro Titling', cursive;
-}
 
 /* --------------BARRA DE NAVEGACION----------- */
-/* header{
+header {
     position: sticky;
     top: 0px;
-} */
-nav{
-    background-color: #010A26;
+}
+
+nav {
+    background-color: $color1;
     border-radius: 5px;
+
+    .navbar-brand {
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+    }
+
+    .navbar-brand:hover {
+        text-shadow: 0 0 5px $color5;
+    }
+
+    .navbar-toggler {
+        border: none;
+        font-size: 30px;
+    }
+
+    .nav-link {
+        color: $color5 !important;
+    }
+
 }
-.navbar-brand:hover{
-    text-shadow: 0 0 5px #ffffff;
-}
-.nav-link{
-    color: white !important;
-}
-.navbar-dark .navbar-toggler {
-    border: none;
-    font-size: 30px;
-}
-.navbar-brand{
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
-}
+
 /* ---------------------------------------- */
-
-
-/* --------------SERVICIOS------------ */
-.pag2{
-    padding-left: 25px;
-}
-
-.pag2 h2{
+.h3-titulo {
+    color: $color5;
     font-size: 70px;
-    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 3px $color1;
 }
 
-.servicio span{
-    font-style:oblique;
-    color: white;
-    font-size: 20px;
-    font-family: 'Balsamiq Sans', cursive;
+.servicio {
+    background-color: $color5;
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 8px 8px $color1;
+
+    article {
+        display: flex;
+        width: 95%;
+        margin: auto;
+
+        .serv {
+            font-size: 30px;
+            color: $color1;
+            font-family: 'Staatliches', cursive;
+            position: relative;
+            left: 15px;
+            margin: 0 auto;
+        }
+
+        .linea {
+            width: 70%;
+            background-color: $color1;
+            border: 1px $color1;
+            height: 2px !important;
+        }
+
+        .precio {
+            font-size: 30px;
+            color: $color1;
+            font-family: 'Staatliches', cursive;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    .descrp {
+        color: $color1;
+        margin-left: 60px;
+        font-weight: bold;
+        position: relative;
+        left: 14px;
+    }
+
 }
 
-.servicio p{
-    color: white;
-    padding-bottom: 25px;
-}
-
-.producto span{
-    font-style:oblique;
-    color: white;
-    font-size: 20px;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.producto p{
-    color: white;
-    padding-bottom: 25px;
-}
-/* --------------SERVICIOS------------ */
 
 
 /* ---------------PIE DE PAGINA------------------- */
-.pie-pagina{
+.pie-pagina {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    background-color: #010A26;
+    background-color: $color1;
     width: 100%;
-    color: white;
+    color: $color5;
     justify-content: center;
     align-content: center;
+
+    .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        padding: 20px 0px 0px;
+        justify-items: center;
+
+        .box {
+            h4 {
+                font-size: 25px;
+            }
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            a,
+            img {
+                display: inline-block;
+                text-decoration: none;
+                width: 40px;
+                height: 40px;
+                margin-right: 5px;
+                margin-bottom: 15px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .mapa {
+                align-items: center;
+                width: auto;
+                height: 100PX;
+            }
+        }
+    }
+
+    .grupo-2 {
+        display: flex;
+        justify-content: space-around;
+    }
 }
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px 0px 0px;
-    justify-items: center
-}
-.pie-pagina .grupo-1 .box h4{
-    font-size: 25px;
-}
-.pie-pagina .grupo-1 .box p{
-    margin-bottom: 30px;
-}
-.pie-pagina .grupo-1 .box a, .box img, .wp img{
-    display: inline-block;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 25px;
-}
-.conta img {
-    vertical-align:middle;
-}
-.mapa {
-    align-items: center;
-    width: auto;
-    height: 100PX;
-}
-.pie-pagina .grupo-2 {
-    display: flex;
-    justify-content: space-around;
-}
+
 /* --------------------------------------------- */
+
+/* -------MEDIA-------------- */
+
+@media only screen and (min-width:800px) {
+    .contactano {
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-between;
+
+        .mensaje {
+            width: 40%;
+        }
+    }
+}

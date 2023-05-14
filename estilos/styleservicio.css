@@ -1,3 +1,5 @@
+/* ----------------Colores---------------------- */
+/* ----------------Colores----------------------- */
 /* ----------------FUENTES----------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap");
 /* font-family: 'Balsamiq Sans', cursive;
@@ -19,10 +21,8 @@ body {
 }
 
 h2 {
-  text-align: center;
-  color: #ffffff;
   font-family: "Castoro Titling", cursive;
-  font-size: 40px;
+  font-size: 30px;
   margin: 20px;
 }
 
@@ -43,6 +43,10 @@ p {
   font-size: 20px;
 }
 
+a {
+  font-family: "Castoro Titling", cursive;
+}
+
 hr {
   justify-items: center;
   height: 2px !important;
@@ -53,74 +57,80 @@ hr {
   opacity: 1;
 }
 
-a {
-  font-family: "Castoro Titling", cursive;
+/* --------------BARRA DE NAVEGACION----------- */
+header {
+  position: sticky;
+  top: 0px;
 }
 
-/* --------------BARRA DE NAVEGACION----------- */
-/* header{
-    position: sticky;
-    top: 0px;
-} */
 nav {
   background-color: #010A26;
   border-radius: 5px;
 }
-
-.navbar-brand:hover {
-  text-shadow: 0 0 5px #ffffff;
-}
-
-.nav-link {
-  color: white !important;
-}
-
-.navbar-dark .navbar-toggler {
-  border: none;
-  font-size: 30px;
-}
-
-.navbar-brand {
+nav .navbar-brand {
   font-family: "Staatliches", cursive;
   font-size: 30px;
 }
+nav .navbar-brand:hover {
+  text-shadow: 0 0 5px white;
+}
+nav .navbar-toggler {
+  border: none;
+  font-size: 30px;
+}
+nav .nav-link {
+  color: white !important;
+}
 
 /* ---------------------------------------- */
-/* --------------SERVICIOS------------ */
-.pag2 {
-  padding-left: 25px;
-}
-
-.pag2 h2 {
+.h3-titulo {
+  color: white;
   font-size: 70px;
-  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 3px #010A26;
 }
 
-.servicio span {
-  font-style: oblique;
-  color: white;
-  font-size: 20px;
-  font-family: "Balsamiq Sans", cursive;
+.servicio {
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 8px 8px #010A26;
+}
+.servicio article {
+  display: flex;
+  width: 95%;
+  margin: auto;
+}
+.servicio article .serv {
+  font-size: 30px;
+  color: #010A26;
+  font-family: "Staatliches", cursive;
+  position: relative;
+  left: 15px;
+  margin: 0 auto;
+}
+.servicio article .linea {
+  width: 70%;
+  background-color: #010A26;
+  border: 1px #010A26;
+  height: 2px !important;
+}
+.servicio article .precio {
+  font-size: 30px;
+  color: #010A26;
+  font-family: "Staatliches", cursive;
+  margin: 0 auto;
+  text-align: center;
+}
+.servicio .descrp {
+  color: #010A26;
+  margin-left: 60px;
+  font-weight: bold;
+  position: relative;
+  left: 14px;
 }
 
-.servicio p {
-  color: white;
-  padding-bottom: 25px;
-}
-
-.producto span {
-  font-style: oblique;
-  color: white;
-  font-size: 20px;
-  font-family: "Balsamiq Sans", cursive;
-}
-
-.producto p {
-  color: white;
-  padding-bottom: 25px;
-}
-
-/* --------------SERVICIOS------------ */
 /* ---------------PIE DE PAGINA------------------- */
 .pie-pagina {
   display: flex;
@@ -133,23 +143,20 @@ nav {
   justify-content: center;
   align-content: center;
 }
-
 .pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
   padding: 20px 0px 0px;
   justify-items: center;
 }
-
 .pie-pagina .grupo-1 .box h4 {
   font-size: 25px;
 }
-
 .pie-pagina .grupo-1 .box p {
   margin-bottom: 30px;
 }
-
-.pie-pagina .grupo-1 .box a, .box img, .wp img {
+.pie-pagina .grupo-1 .box a,
+.pie-pagina .grupo-1 .box img {
   display: inline-block;
   text-decoration: none;
   width: 40px;
@@ -159,20 +166,25 @@ nav {
   text-align: center;
   font-size: 25px;
 }
-
-.conta img {
-  vertical-align: middle;
-}
-
-.mapa {
+.pie-pagina .grupo-1 .box .mapa {
   align-items: center;
   width: auto;
   height: 100PX;
 }
-
 .pie-pagina .grupo-2 {
   display: flex;
   justify-content: space-around;
 }
 
-/* --------------------------------------------- *//*# sourceMappingURL=styleservicio.css.map */
+/* --------------------------------------------- */
+/* -------MEDIA-------------- */
+@media only screen and (min-width: 800px) {
+  .contactano {
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+  }
+  .contactano .mensaje {
+    width: 40%;
+  }
+}/*# sourceMappingURL=styleservicio.css.map */
