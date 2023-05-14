@@ -43,6 +43,10 @@ p {
   font-size: 20px;
 }
 
+a {
+  font-family: "Castoro Titling", cursive;
+}
+
 hr {
   justify-items: center;
   height: 2px !important;
@@ -137,7 +141,7 @@ h2 {
   transform: translateY(-30px) scale(0.9);
   transition: all 0.2s;
 }
-.reservas1 .iniciar a, .reservas1 .horario a {
+.reservas1 .iniciar .link, .reservas1 .horario .link {
   font-size: 12px;
   color: #010A26;
   font-family: "Pacifico", cursive;
