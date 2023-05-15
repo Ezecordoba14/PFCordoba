@@ -44,6 +44,7 @@ h4{
     margin-top: 10px;
     margin-bottom: 0px;
 }
+
 p{
     font-family:'Raleway', sans-serif;
     font-size: 20px;
@@ -192,6 +193,13 @@ header{
             border-radius: 5px;
             width: 100px;
             justify-items: center;
+        }
+
+        .card-title{
+            font-size: 20px;
+            font-family: 'Castoro Titling', cursive;
+            margin-top: 10px;
+            margin-bottom: 0px;
         }
     }
 }

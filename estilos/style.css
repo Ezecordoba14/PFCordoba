@@ -169,6 +169,12 @@ header nav .nav-link {
   width: 100px;
   justify-items: center;
 }
+.reseñas .card .card-title {
+  font-size: 20px;
+  font-family: "Castoro Titling", cursive;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
 
 /* ---------------------------------------------- */
 /* ---------------PIE DE PAGINA------------------- */
