@@ -63,7 +63,7 @@ header nav .navbar-brand {
   font-size: 30px;
 }
 header nav .navbar-brand:hover {
-  text-shadow: 0 0 5px #ffffff;
+  text-shadow: 0 0 5px white;
 }
 header nav .navbar-toggler {
   border: none;
@@ -115,7 +115,7 @@ header nav .nav-link {
 /* ------------------------------------------------ */
 /* --------------------GALERIA--------------------- */
 .galeria {
-  background-color: #f291c7;
+  background-color: #F291C7;
   color: white;
   text-align: center;
   width: 95%;

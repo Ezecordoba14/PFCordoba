@@ -1,3 +1,5 @@
+/* ----------------Colores---------------------- */
+/* ----------------Colores----------------------- */
 /* ----------------FUENTES----------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap");
 /* font-family: 'Balsamiq Sans', cursive;
@@ -20,10 +22,11 @@ body {
 
 h2 {
   text-align: center;
-  color: #ffffff;
+  color: white;
   font-family: "Castoro Titling", cursive;
-  font-size: 40px;
+  font-size: 45px;
   margin: 20px;
+  text-shadow: 2px 3px #010A26;
 }
 
 h3 {

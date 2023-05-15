@@ -99,11 +99,14 @@ nav {
 
 /* ---------------------------------------- */
 /* ------------RESERVAS------------ */
-h2 {
-    color: $color5;
-    font-size: 70px;
-    text-align: center;
-    text-shadow: 2px 3px $color1;
+.h2-titulo{
+    h2 {
+
+        color: $color5;
+        font-size: 45px;
+        text-align: center;
+        text-shadow: 2px 3px $color1;
+    }
 }
 .contactano {
 

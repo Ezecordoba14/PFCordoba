@@ -84,9 +84,9 @@ nav .nav-link {
 
 /* ---------------------------------------- */
 /* ------------RESERVAS------------ */
-h2 {
+.h2-titulo h2 {
   color: white;
-  font-size: 70px;
+  font-size: 45px;
   text-align: center;
   text-shadow: 2px 3px #010A26;
 }

@@ -1,3 +1,11 @@
+/* ----------------Colores---------------------- */
+$color1: #010A26;
+$color2: #023E73;
+$color3: #F291C7;
+$color4: black;
+$color5: white;
+
+/* ----------------Colores----------------------- */
 /* ----------------FUENTES----------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Castoro+Titling&family=Pacifico&family=Raleway:wght@100&family=Sacramento&family=Six+Caps&family=Staatliches&display=swap');
 
@@ -16,15 +24,16 @@ font-family: 'Staatliches', cursive;*/
 }
 
 body{
-    background-color: #023E73;
+    background-color: $color2;
 }
 
 h2{
     text-align: center;
-    color: #ffffff;
+    color: $color5;
     font-family: 'Castoro Titling', cursive;
-    font-size: 40px;
+    font-size: 45px;
     margin: 20px;
+    text-shadow: 2px 3px $color1;
 }
 h3{
     font-family: 'Castoro Titling', cursive;
@@ -44,8 +53,8 @@ hr {
     justify-items: center;
     height: 2px !important;
     width: 90%;
-    background-color: #F291C7;
-    border-color: #F291C7;
+    background-color: $color3;
+    border-color: $color3;
     margin: 20px auto;
     opacity: 1;
 }
@@ -60,7 +69,7 @@ header{
 }
 
 nav{
-    background-color: #010A26;
+    background-color: $color1;
     border-radius: 5px;
     
     .navbar-brand{
@@ -77,7 +86,7 @@ nav{
         font-size: 30px;
     }
     .nav-link{
-        color: white !important;
+        color: $color5 !important;
     }
     
 }
@@ -85,7 +94,7 @@ nav{
 
 /* --------------------GALERIA--------------------- */
 .galeria {
-    background-color: #023E73;
+    background-color: $color2;
     height: auto;
     max-width: 100%;
     display: grid;
@@ -105,7 +114,7 @@ nav{
     .img:hover{
         transform: scale(0.90);
         transition: all 0.5s;
-        box-shadow: 0 0 5px #010A26;
+        box-shadow: 0 0 5px $color1;
     }
     
     .img1{
@@ -141,9 +150,9 @@ nav{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    background-color: #010A26;
+    background-color: $color1;
     width: 100%;
-    color: white;
+    color: $color5;
     justify-content: center;
     align-content: center;
 
