@@ -64,6 +64,7 @@ a {
 header {
   position: sticky;
   top: 0px;
+  z-index: 5;
 }
 
 nav {
@@ -97,15 +98,17 @@ nav .nav-link {
   padding-bottom: 20px;
 }
 .galeria .img {
-  border-radius: 5px;
+  background-color: white;
+  box-shadow: 8px 8px #010A26;
   background-position: center;
   background-size: cover;
   padding: 30px;
   transition: all 0.5s;
 }
 .galeria .img:hover {
-  transform: scale(0.9);
-  transition: all 0.5s;
+  transform: translate(8px, 8px);
+  box-shadow: none;
+  transition: all 0, 1s;
   box-shadow: 0 0 5px #010A26;
 }
 .galeria .img1 {

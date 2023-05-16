@@ -66,6 +66,7 @@ a{
 header{
     position: sticky;
     top: 0px;
+    z-index: 5;
 }
 
 nav{
@@ -104,7 +105,9 @@ nav{
     padding-bottom: 20px;
 
     .img{
-        border-radius: 5px;
+        background-color: $color5;
+        box-shadow: 8px 8px $color1;
+
         background-position:center;
         background-size: cover;
         padding: 30px;
@@ -112,8 +115,9 @@ nav{
     }
 
     .img:hover{
-        transform: scale(0.90);
-        transition: all 0.5s;
+        transform: translate(8px, 8px);
+        box-shadow: none;
+        transition: all 0,1s;
         box-shadow: 0 0 5px $color1;
     }
     
