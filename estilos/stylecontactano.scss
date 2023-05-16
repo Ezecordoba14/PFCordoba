@@ -66,11 +66,11 @@ hr {
 }
 
 /* --------------BARRA DE NAVEGACION----------- */
-header {
+header{
     position: sticky;
     top: 0px;
+    z-index: 5;
 }
-
 nav {
     background-color: $color1;
     border-radius: 5px;

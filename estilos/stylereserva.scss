@@ -67,8 +67,9 @@ hr {
 
 /* --------------BARRA DE NAVEGACION----------- */
 header {
-    position: sticky;
-    top: 0px;
+        position: sticky;
+        top: 0px;
+        z-index: 5;
 }
 
 nav {
