@@ -1,7 +1,7 @@
 /* ----------------Colores---------------------- */
 $color1: #010A26;
 $color2: #023E73;
-$color3: #F291C7;
+$color3: #eeaccb;
 $color4: black;
 $color5: white;
 
@@ -18,68 +18,81 @@ font-family: 'Sacramento', cursive;
 font-family: 'Six Caps', sans-serif;
 font-family: 'Staatliches', cursive;*/
 /* ----------------FUENTES----------------------- */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: $color2;
 }
 
-h2{
+h2 {
     font-family: 'Castoro Titling', cursive;
     font-size: 30px;
     margin: 20px;
     text-shadow: 2px 3px $color1;
 }
-h3{
+
+h3 {
     font-family: 'Castoro Titling', cursive;
     font-size: 40px;
     margin: 20px;
 }
-h4{
+
+h4 {
     font-family: 'Castoro Titling', cursive;
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
-p{
-    font-family:'Raleway', sans-serif;
+p {
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
-a{
+
+a {
     font-family: 'Castoro Titling', cursive;
 }
 
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $color3;
+    border-radius: 3px;
+}
+
 /* --------------BARRA DE NAVEGACION----------- */
-header{
+header {
     position: sticky;
     top: 0px;
     z-index: 5;
 
-    nav{
+    nav {
         background-color: $color1;
         border-radius: 5px;
-        
-        .navbar-brand{
+
+        .navbar-brand {
             font-family: 'Staatliches', cursive;
             font-size: 30px;
         }
-    
-        .navbar-brand:hover{
+
+        .navbar-brand:hover {
             text-shadow: 0 0 5px $color5;
         }
-    
+
         .navbar-toggler {
             border: none;
             font-size: 30px;
         }
-        .nav-link{
+
+        .nav-link {
             color: $color5 !important;
         }
-        
+
     }
 }
 
@@ -90,32 +103,46 @@ header{
 /* ---------------------------------------- */
 
 /* -----------IMAGEN LOGO---------- */
-.logo img{
+.logo img {
     width: 100%;
 }
+
 /* -------------------------------- */
 
 /* ---------------------PRESENTACION--------------- */
-.presentacion-h2{
+.presentacion-h2 {
     text-align: center;
     color: $color5;
 }
 
-.presentacion{
+.presentacion {
     color: $color5;
     margin: 0 20px;
-    .presentacion-derecha{
+
+    .presentacion-derecha {
         // height: 900px;
         margin: 10px;
         background-color: $color5;
         box-shadow: 8px 8px $color1;
         // max-height: 370px;
-            p{
+        overflow: scroll;
+
+        p {
             color: $color1;
             text-align: center;
             font-weight: bold;
         }
     }
+
+    .presentacion-derecha::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    .presentacion-derecha::-webkit-scrollbar-thumb {
+        background-color: $color3;
+        border-radius: 3px;
+    }
+
 
     .presentacion-izquierda {
         // width: 50%;
@@ -136,7 +163,7 @@ header{
 /* ------------------------------------------------ */
 
 /* --------------------GALERIA--------------------- */
-.galeria{
+.galeria {
     background-color: $color3;
     color: $color5;
     text-align: center;
@@ -145,19 +172,19 @@ header{
     margin-bottom: 20px;
     box-shadow: 8px 8px $color1;
 
-    .carousel{
+    .carousel {
         bottom: 20px;
         box-shadow: 8px 8px #3b1c2d;
     }
 
-    h2{
+    h2 {
         color: $color1;
         font-weight: bold;
         padding-top: 20px;
         text-shadow: 1px 2px $color5;
     }
 
-    #carouselExampleControls{
+    #carouselExampleControls {
         height: 80%;
         width: 50%;
         margin: auto;
@@ -168,12 +195,13 @@ header{
 /* ------------------------------------------------ */
 
 /* ------------------RESEÑAS------------------------ */
-.reseña-h3{
+.reseña-h3 {
     text-align: center;
     color: $color5;
     padding-top: 20px;
 }
-.reseñas{
+
+.reseñas {
     display: flex;
     width: 100%;
     justify-items: center;
@@ -181,22 +209,22 @@ header{
     flex-direction: column;
     align-items: center;
 
-    .card{
+    .card {
         height: auto;
-        max-width: 200px;
+        // max-width: 200px;
         padding: 10px;
         align-items: center;
         text-align: center;
         margin: 10px 0;
         box-shadow: 8px 8px $color1;
 
-        .card-img-top{
+        .card-img-top {
             border-radius: 5px;
             width: 100px;
             justify-items: center;
         }
 
-        .card-title{
+        .card-title {
             font-size: 20px;
             font-family: 'Castoro Titling', cursive;
             margin-top: 10px;
@@ -209,7 +237,7 @@ header{
 /* ---------------------------------------------- */
 
 /* ---------------PIE DE PAGINA------------------- */
-.pie-pagina{
+.pie-pagina {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -226,14 +254,17 @@ header{
         padding: 20px 0px 0px;
         justify-items: center;
 
-        .box{
-            h4{
+        .box {
+            h4 {
                 font-size: 25px;
             }
-            p{
+
+            p {
                 margin-bottom: 30px;
             }
-            a, img {
+
+            a,
+            img {
                 display: inline-block;
                 text-decoration: none;
                 width: 40px;
@@ -243,6 +274,7 @@ header{
                 text-align: center;
                 font-size: 25px;
             }
+
             .mapa {
                 align-items: center;
                 width: auto;
@@ -250,6 +282,7 @@ header{
             }
         }
     }
+
     .grupo-2 {
         display: flex;
         justify-content: space-around;
@@ -261,36 +294,42 @@ header{
 
 /* -------MEDIA-------------- */
 
-@media only screen and (min-width:480px){
-    .presentacion{
+@media only screen and (min-width:480px) {
+    .presentacion {
         display: flex;
         padding-bottom: 20px;
 
-        p{
+        p {
             max-height: 100px;
         }
     }
-    .presentacion-izquierda{
+
+    .presentacion-izquierda {
         width: 50%;
     }
-    .presentacion-derecha{
+
+    .presentacion-derecha {
         width: 50%;
         max-height: 370px;
-                // height: 900px;
+        // height: 900px;
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:1180px){
-    .presentacion-derecha{
+@media only screen and (min-width:480px) and (max-width:1180px) {
+    .presentacion-derecha {
         overflow: scroll;
     }
 }
 
-@media only screen and (min-width:700px){
-    .reseñas{
+@media only screen and (min-width:700px) {
+    .reseñas {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
         justify-items: center;
+
+        .card {
+            max-width: 200px;
+        }
     }
 }

@@ -20,6 +20,15 @@ body {
   background-color: #023E73;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #eeaccb;
+  border-radius: 3px;
+}
+
 h2 {
   font-family: "Castoro Titling", cursive;
   font-size: 30px;
@@ -51,8 +60,8 @@ hr {
   justify-items: center;
   height: 2px !important;
   width: 90%;
-  background-color: #F291C7;
-  border-color: #F291C7;
+  background-color: #eeaccb;
+  border-color: #eeaccb;
   margin: 20px auto;
   opacity: 1;
 }
@@ -138,7 +147,9 @@ h2 {
   font-family: "Staatliches", cursive;
   transition: all 0.2s;
 }
-.reservas1 .iniciar .form-grupo .form-input:focus + .form-label, .reservas1 .horario .form-grupo .form-input:focus + .form-label, .reservas1 .iniciar .form-grupo .form-input:valid + .form-label, .reservas1 .horario .form-grupo .form-input:valid + .form-label {
+.reservas1 .iniciar .form-grupo .form-input:focus + .form-label, .reservas1 .horario .form-grupo .form-input:focus + .form-label,
+.reservas1 .iniciar .form-grupo .form-input:valid + .form-label,
+.reservas1 .horario .form-grupo .form-input:valid + .form-label {
   transform: translateY(-30px) scale(0.9);
   transition: all 0.2s;
 }
@@ -153,7 +164,7 @@ h2 {
   margin: 30px 0px;
   width: 310px;
   font-size: 15px;
-  background: #F291C7;
+  background: #eeaccb;
   border-radius: 30px;
   font-weight: 800;
   box-shadow: 5px 5px 0px 0px #010A26;

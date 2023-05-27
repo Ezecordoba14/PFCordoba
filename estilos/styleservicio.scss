@@ -1,7 +1,7 @@
 /* ----------------Colores---------------------- */
 $color1: #010A26;
 $color2: #023E73;
-$color3: #F291C7;
+$color3: #eeaccb;
 $color4: black;
 $color5: white;
 
@@ -26,6 +26,14 @@ font-family: 'Staatliches', cursive;*/
 
 body {
     background-color: $color2;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $color3;
+    border-radius: 3px;
 }
 
 h2 {

@@ -49,6 +49,15 @@ a {
   font-family: "Castoro Titling", cursive;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #eeaccb;
+  border-radius: 3px;
+}
+
 /* --------------BARRA DE NAVEGACION----------- */
 header {
   position: sticky;
@@ -95,11 +104,19 @@ header nav .nav-link {
   margin: 10px;
   background-color: white;
   box-shadow: 8px 8px #010A26;
+  overflow: scroll;
 }
 .presentacion .presentacion-derecha p {
   color: #010A26;
   text-align: center;
   font-weight: bold;
+}
+.presentacion .presentacion-derecha::-webkit-scrollbar {
+  width: 7px;
+}
+.presentacion .presentacion-derecha::-webkit-scrollbar-thumb {
+  background-color: #eeaccb;
+  border-radius: 3px;
 }
 .presentacion .presentacion-izquierda {
   height: 370px;
@@ -116,7 +133,7 @@ header nav .nav-link {
 /* ------------------------------------------------ */
 /* --------------------GALERIA--------------------- */
 .galeria {
-  background-color: #F291C7;
+  background-color: #eeaccb;
   color: white;
   text-align: center;
   width: 95%;
@@ -158,7 +175,6 @@ header nav .nav-link {
 }
 .reseñas .card {
   height: auto;
-  max-width: 200px;
   padding: 10px;
   align-items: center;
   text-align: center;
@@ -202,7 +218,8 @@ header nav .nav-link {
 .pie-pagina .grupo-1 .box p {
   margin-bottom: 30px;
 }
-.pie-pagina .grupo-1 .box a, .pie-pagina .grupo-1 .box img {
+.pie-pagina .grupo-1 .box a,
+.pie-pagina .grupo-1 .box img {
   display: inline-block;
   text-decoration: none;
   width: 40px;
@@ -251,5 +268,8 @@ header nav .nav-link {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     justify-items: center;
+  }
+  .reseñas .card {
+    max-width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
